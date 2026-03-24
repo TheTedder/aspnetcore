@@ -9,6 +9,13 @@ Microsoft.AspNetCore.Components.Forms.ClientValidationContext
 Microsoft.AspNetCore.Components.Forms.ClientValidationContext.ClientValidationContext() -> void
 Microsoft.AspNetCore.Components.Forms.ClientValidationContext.ClientValidationContext(System.Collections.Generic.IDictionary<string!, string!>! attributes) -> void
 Microsoft.AspNetCore.Components.Forms.ClientValidationContext.MergeAttribute(string! key, string! value) -> bool
+Microsoft.AspNetCore.Components.Forms.EditContext.AddValidationTask(in Microsoft.AspNetCore.Components.Forms.FieldIdentifier fieldIdentifier, System.Threading.Tasks.Task! task, System.Threading.CancellationTokenSource! cts) -> void
+Microsoft.AspNetCore.Components.Forms.EditContext.IsValidationFaulted() -> bool
+Microsoft.AspNetCore.Components.Forms.EditContext.IsValidationFaulted(in Microsoft.AspNetCore.Components.Forms.FieldIdentifier fieldIdentifier) -> bool
+Microsoft.AspNetCore.Components.Forms.EditContext.IsValidationPending() -> bool
+Microsoft.AspNetCore.Components.Forms.EditContext.IsValidationPending(in Microsoft.AspNetCore.Components.Forms.FieldIdentifier fieldIdentifier) -> bool
+Microsoft.AspNetCore.Components.Forms.EditContext.OnValidationRequestedAsync -> System.Func<object!, Microsoft.AspNetCore.Components.Forms.ValidationRequestedEventArgs!, System.Threading.Tasks.Task!>?
+Microsoft.AspNetCore.Components.Forms.EditContext.ValidateAsync() -> System.Threading.Tasks.Task<bool>!
 Microsoft.AspNetCore.Components.Forms.IClientValidationAdapter
 Microsoft.AspNetCore.Components.Forms.IClientValidationAdapter.AddClientValidation(in Microsoft.AspNetCore.Components.Forms.ClientValidationContext context, string! errorMessage) -> void
 Microsoft.AspNetCore.Components.Forms.IClientValidationService
