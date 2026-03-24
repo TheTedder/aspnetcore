@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>$(DefaultNetCoreTargetFramework)</TargetFramework>
+    <IsShippingPackage>false</IsShippingPackage>
     <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,9 +12,14 @@
     <Reference Include="Microsoft.AspNetCore.Authentication" />
     <Reference Include="Microsoft.AspNetCore.Authentication.Abstractions" />
     <Reference Include="Microsoft.AspNetCore.Authentication.Core" />
+    <Reference Include="Microsoft.AspNetCore.Authorization" />
     <Reference Include="Microsoft.AspNetCore.Authorization.Policy" />
     <Reference Include="Microsoft.AspNetCore.Components.Endpoints" />
+    <Reference Include="Microsoft.AspNetCore.Components.Web" />
     <Reference Include="Microsoft.AspNetCore.Cors" />
+    <Reference Include="Microsoft.AspNetCore.DataProtection" />
+    <Reference Include="Microsoft.AspNetCore.DataProtection.Abstractions" />
+    <Reference Include="Microsoft.AspNetCore.DataProtection.Extensions" />
     <Reference Include="Microsoft.AspNetCore.Diagnostics" />
     <Reference Include="Microsoft.AspNetCore.Diagnostics.Abstractions" />
     <Reference Include="Microsoft.AspNetCore.HostFiltering" />
@@ -24,9 +29,12 @@
     <Reference Include="Microsoft.AspNetCore.Html.Abstractions" />
     <Reference Include="Microsoft.AspNetCore.Http" />
     <Reference Include="Microsoft.AspNetCore.Http.Abstractions" />
+    <Reference Include="Microsoft.AspNetCore.Http.Connections" />
+    <Reference Include="Microsoft.AspNetCore.Http.Connections.Common" />
     <Reference Include="Microsoft.AspNetCore.Http.Extensions" />
     <Reference Include="Microsoft.AspNetCore.Http.Features" />
     <Reference Include="Microsoft.AspNetCore.HttpOverrides" />
+    <Reference Include="Microsoft.AspNetCore.HttpsPolicy" />
     <Reference Include="Microsoft.AspNetCore.Localization" />
     <Reference Include="Microsoft.AspNetCore.Mvc" />
     <Reference Include="Microsoft.AspNetCore.Mvc.Abstractions" />
@@ -40,10 +48,6 @@
     <Reference Include="Microsoft.AspNetCore.Mvc.RazorPages" />
     <Reference Include="Microsoft.AspNetCore.Mvc.TagHelpers" />
     <Reference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" />
-    <Reference Include="Microsoft.AspNetCore.OutputCaching" />
-    <Reference Include="Microsoft.AspNetCore.Razor" />
-    <Reference Include="Microsoft.AspNetCore.Razor.Runtime" />
-    <Reference Include="Microsoft.AspNetCore.ResponseCaching.Abstractions" />
     <Reference Include="Microsoft.AspNetCore.Routing" />
     <Reference Include="Microsoft.AspNetCore.Routing.Abstractions" />
     <Reference Include="Microsoft.AspNetCore.Server.HttpSys" />
@@ -56,6 +60,13 @@
     <Reference Include="Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets" />
     <Reference Include="Microsoft.AspNetCore.StaticAssets" />
     <Reference Include="Microsoft.AspNetCore.StaticFiles" />
+    <Reference Include="Microsoft.AspNetCore.WebSockets" />
+    <Reference Include="Microsoft.AspNetCore.WebUtilities" />
+    <Reference Include="Microsoft.Extensions.Caching.Memory" />
+    <Reference Include="Microsoft.Extensions.Features" />
+    <Reference Include="Microsoft.Extensions.Hosting" />
+    <Reference Include="Microsoft.Extensions.Logging" />
+    <Reference Include="Microsoft.Net.Http.Headers" />
   </ItemGroup>
 
   <!-- aspnet-validation.js is always built to dist/Release by rollup (regardless of configuration) -->

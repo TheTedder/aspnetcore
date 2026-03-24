@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <BasePath />
+    <link rel="stylesheet" href="@Assets["css/site.css"]" />
+    <link rel="icon" type="image/png" href="@Assets["favicon.png"]" />
+    <HeadOutlet />
+</head>
+<body>
+    <Routes />
+    <script src="@Assets["_framework/blazor.web.js"]"></script>
+    <script src="js/aspnet-validation.js"></script>
+    <script>
+        // Custom 'noprofanity' validation provider — matches the NoProfanityAttribute (C#).
+        // Register after DOMContentLoaded (when __aspnetValidation is available),
+        // then re-scan so the new provider is active for already-scanned elements.
+        function registerCustomProviders() {
+            if (window.__aspnetValidation) {
+                window.__aspnetValidation.addProvider('noprofanity', function (value, element, params) {
+                    if (!value) return true;
+                    var words = (params.words || '').split(',');
+                    for (var i = 0; i < words.length; i++) {
+                        var word = words[i].trim().toLowerCase();
+                        if (word && value.toLowerCase().indexOf(word) >= 0) {
+                            return false;
+                        }
+                    }
+                    return true;
+                });
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', registerCustomProviders);
+        } else {
+            registerCustomProviders();
+        }
+
+        Blazor.addEventListener('enhancedload', function () {
+            console.log('[enhancedload] Enhanced navigation completed');
+        });
+    </script>
+</body>
+</html>
