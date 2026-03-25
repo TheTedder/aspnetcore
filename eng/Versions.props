@@ -192,6 +192,9 @@
     <XunitExtensibilityCoreVersion>$(XunitVersion)</XunitExtensibilityCoreVersion>
     <XunitExtensibilityExecutionVersion>$(XunitVersion)</XunitExtensibilityExecutionVersion>
     <XUnitRunnerVisualStudioVersion>3.1.3</XUnitRunnerVisualStudioVersion>
+    <YarpReverseProxyVersion>2.3.0</YarpReverseProxyVersion>
+    <MicrosoftExtensionsServiceDiscoveryVersion>9.2.0</MicrosoftExtensionsServiceDiscoveryVersion>
+    <MicrosoftExtensionsServiceDiscoveryYarpVersion>9.2.0</MicrosoftExtensionsServiceDiscoveryYarpVersion>
     <MicrosoftDataSqlClientVersion>5.2.2</MicrosoftDataSqlClientVersion>
     <MicrosoftOpenApiVersion>3.3.1</MicrosoftOpenApiVersion>
     <MicrosoftOpenApiYamlReaderVersion>3.3.1</MicrosoftOpenApiYamlReaderVersion>

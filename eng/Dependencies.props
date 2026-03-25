@@ -240,6 +240,9 @@ may be turned into `<PackageReference>` items in projects.
     <LatestPackageReference Include="xunit.assert" />
     <LatestPackageReference Include="xunit.extensibility.core" />
     <LatestPackageReference Include="xunit.extensibility.execution" />
+    <LatestPackageReference Include="Yarp.ReverseProxy" />
+    <LatestPackageReference Include="Microsoft.Extensions.ServiceDiscovery" />
+    <LatestPackageReference Include="Microsoft.Extensions.ServiceDiscovery.Yarp" />
   </ItemGroup>
 
   <ItemGroup Label="Dependencies with versions.">
